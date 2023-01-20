@@ -1,0 +1,37 @@
+.widgets__container{
+    /* border-right:1px solid #eee; */
+    border-left:1px solid #eee;
+}
+.widgets__input {
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border:1px solid black;
+}
+
+.widgets__input>input {
+    border: none;
+    background-color: gray;
+    outline: none;
+}
+
+.widgets__searchIcon {
+    color: gray;
+}
+
+.widgets__widgetContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #f5f8fa;
+    border-radius: 20px;
+}
+@media screen and (max-width:1005px){
+    .widgets__container{
+        display:none;
+    }
+}

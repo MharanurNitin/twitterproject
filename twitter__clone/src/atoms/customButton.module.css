@@ -1,0 +1,9 @@
+.tweetBtn{
+    border:none;
+    font-size: 20px;
+    color:white;
+    background:rgba(69, 142, 236, 0.808);
+    padding:15px;
+    width:80%;
+    border-radius:30px;
+}

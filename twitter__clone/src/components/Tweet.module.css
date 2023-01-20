@@ -1,0 +1,79 @@
+.dialogbox{
+    position:absolute !important;
+    top:-15rem !important;
+    left:0% !important;
+}
+
+.Container1{
+    display: flex;
+    padding-left: .1rem;
+    margin-top: -1rem;
+   margin-left: 0.5rem;
+
+
+}
+.Container2{
+    padding-left: 4.3rem;
+    width: 30.0rem;
+}
+.button{
+    border: 0.1rem solid gray;
+    height: 1.5rem;
+    width: 7.5rem;
+    color:rgb(29, 161, 242);
+    font-weight: bold;
+}
+.button1{
+    border: none;
+    height: 1.5rem;
+    width: 10.5rem;
+    color:rgb(29, 161, 242);
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+.footerIcon{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    padding:10px;
+    align-items:center;
+}
+.button2{
+    background-color: rgb(29, 161, 242);
+    border: none;
+    outline:none;
+    padding:10px 15px;
+    color:white;
+    border-radius:10px;
+  
+}
+.icon {
+     width:40%;
+    margin-top: 0.4rem;
+    font-size: 1.3rem;
+    margin-left: 4.5rem;
+    align-items: center;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content:space-between;
+    color:rgb(29, 161, 242);
+}
+.icon:hover{
+    cursor:pointer;
+}
+.textarea{
+   margin-top:20px;
+    border: none;
+    outline: none;
+padding:10px;
+  width:90%;
+  resize: none;
+  
+}
+.textarea::-webkit-scrollbar{
+    display: none;
+}
+.selectbtn{
+    border-radius:10px;
+    padding:0;
+}

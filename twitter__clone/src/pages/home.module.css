@@ -1,0 +1,10 @@
+.sections{
+    max-width:1300px;
+    display:grid;
+    grid-template-columns: 0.8fr 2fr 1.3fr;
+    justify-content: center;
+    margin:auto;
+    height:100vh;
+    overflow:hidden;
+    
+}

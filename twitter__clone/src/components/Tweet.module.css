@@ -2,6 +2,7 @@
     position:absolute !important;
     top:-15rem !important;
     left:0% !important;
+    /* width:400px !important; */
 }
 
 .Container1{
@@ -11,6 +12,11 @@
    margin-left: 0.5rem;
 
 
+}
+.Container1>img{
+    padding:3px;
+    border:1px solid #efefef;
+    border-radius:50%;
 }
 .Container2{
     padding-left: 4.3rem;
@@ -34,7 +40,7 @@
 .footerIcon{
     width:100%;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     padding:10px;
     align-items:center;
 }
@@ -75,5 +81,6 @@ padding:10px;
 }
 .selectbtn{
     border-radius:10px;
-    padding:0;
+    height:20px;
+    margin-top:8px;
 }

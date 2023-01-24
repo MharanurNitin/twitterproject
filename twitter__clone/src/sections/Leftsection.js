@@ -40,7 +40,7 @@ import Tweet from '../components/Tweet';
     Icon: <ListAltIcon />,
   },
   {
-    title: "Identity",
+    title: "Profile",
     Icon: <PermIdentityIcon />,
   },
   {
@@ -64,11 +64,12 @@ function Leftsection() {
         );
       })}
       {/* <CustomButton title="Tweet" classname={style.tweetBtn} /> */}
-      <Tweet/>
+      <Tweet className={style.tweetBtn}/>
       <UserDetailBtn style={{color:"red"}}
         Name="Nitin Mharanur"
         userName="@IamNitin"
         src="https://imgs.search.brave.com/F1jG4f5hyN3hn_Q1t-BCS6YOzBwCel29npXrBHOUIyc/rs:fit:855:935:1/g:ce/aHR0cHM6Ly92aWdu/ZXR0ZS53aWtpYS5u/b2Nvb2tpZS5uZXQv/bWN1ZmYvaW1hZ2Vz/LzkvOWMvUm9tYW5f/cmVpZ25zX3BuZ193/d2VfMjAyMF9ieV92/X21venpfZGU3ZDhw/ay1wcmUucG5nL3Jl/dmlzaW9uL2xhdGVz/dD9jYj0yMDIwMTAy/NTE3MTgzNA"
+        className={style.UserDetailBtn}
       />
     </div>
   );

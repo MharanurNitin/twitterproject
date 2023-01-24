@@ -13,6 +13,7 @@ import {CiImageOn,CiLocationOn} from 'react-icons/ci'
 import {AiOutlineFileGif,AiOutlineSchedule} from 'react-icons/ai'
 import {CgPoll} from 'react-icons/cg'
 import {GrEmoji} from 'react-icons/gr'
+import tweetBtn from "../atoms/customButton.module.css";
 
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -65,9 +66,10 @@ export default function Tweet() {
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Tweet
-      </Button>
+     
+      <button className={tweetBtn.tweetBtn} onClick={handleClickOpen}>
+        <p>Tweet</p>
+      </button>
 
       <BootstrapDialog
         PaperProps={{ style: { borderRadius: "1rem" } }}
@@ -83,14 +85,13 @@ export default function Tweet() {
           <div className={style.Container1}>
             <img
               src="https://imgs.search.brave.com/F1jG4f5hyN3hn_Q1t-BCS6YOzBwCel29npXrBHOUIyc/rs:fit:855:935:1/g:ce/aHR0cHM6Ly92aWdu/ZXR0ZS53aWtpYS5u/b2Nvb2tpZS5uZXQv/bWN1ZmYvaW1hZ2Vz/LzkvOWMvUm9tYW5f/cmVpZ25zX3BuZ193/d2VfMjAyMF9ieV92/X21venpfZGU3ZDhw/ay1wcmUucG5nL3Jl/dmlzaW9uL2xhdGVz/dD9jYj0yMDIwMTAy/NTE3MTgzNA"
-              width={45}
-              height={45}
+              width={37}
+              height={37}
             />
-            {/* <button className={style.button}>Everyone </button> */}
-            {/* < */}
+          
             <select className={style.selectbtn}>
               <option value="Everyone">Everyone</option>
-              <option value="Twitter-circle">Twitter-circe</option>
+              <option value="Twitter-circle">Twitter-circle</option>
             </select>
           </div>
           <div className={style.Container2}>
@@ -113,7 +114,9 @@ export default function Tweet() {
               <AiOutlineSchedule />
               <CiLocationOn />
             </div>
-            <button className={style.button2}>Tweet</button>
+            <button className={style.button2} onClick={handleClose}>
+              Tweet
+            </button>
           </div>
         </div>
       </BootstrapDialog>
